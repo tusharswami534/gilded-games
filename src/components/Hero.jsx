@@ -36,7 +36,7 @@ useEffect(() => {
     <div className=" bg-hero bg-no-repeat bg-cover bg-center">
       <Header />
       <div className="lg:min-h-[730px] flex flex-col lg:justify-end justify-center items-center">
-        <div className="max-w-[1360px] px-5 mx-auto lg:mb-[129px] max-lg:py-24">
+        <div className="max-w-[1360px] px-5 mx-auto lg:mb-[129px] max-lg:py-24 max-sm:py-16 max-md:py-20x">
           <h1 className="text-7xl max-w-[1320px] mx-auto leading-[91.8px] max-lg:leading-[80px] max-md:leading-[60px] max-sm:leading-[40px] max-lg:text-6xl max-md:text-5xl max-sm:text-4xl font-poppins text-center text-white">There are games... And then
             there are <span className="text-[#1BABFE]">Gilded</span> Games</h1>
             <p className="text-white text-center text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl mt-5">

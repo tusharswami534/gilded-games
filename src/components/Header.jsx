@@ -7,6 +7,7 @@ const Header = () => {
   const [open, setOpen] = useState(false)
   const handleClick = () => {
     setOpen(!open)
+    document.body.style.overflow = open ? '' : 'hidden'
   }
 
   const closeHandler = () => {
@@ -14,10 +15,10 @@ const Header = () => {
   }
 
   return (
-    <div className="bgblack">
-      <div className="bg-opacity-80">
+    <div className="bg-black/80">
+      <div className="bg-opacity-0">
         <div className="max-w-[1355px] flex items-center justify-between py-5 max-lg:px-5 px-4 mx-auto w-full">
-          <a href="/"> <img src={PageLogo} alt="page-logo" /> </a>
+          <a className='max-md:max-w-[170px]' href="/"> <img src={PageLogo} alt="page-logo" /> </a>
           <div className={`flex gap-[29px] max-xl:gap-5 max-lg:fixed max-lg:top-0 max-lg:-right-full max-lg:h-full max-lg:w-full max-lg:justify-center max-lg:items-center transition-all duration-300 max-lg:flex-col max-lg:bg-black max-lg:z-10 ${open ? 'max-lg:!right-0' : ''}`}>
             <div className='flex gap-10 max-xl:gap-6 max-lg:flex-col items-center' >
               {HEADER_LIST.map((item, index) => (

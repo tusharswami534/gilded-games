@@ -1,14 +1,17 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import PageLogo from '../assets/images/png/page-logo.png'
-import { HEADER_LIST } from '../utils/helper'
 import { Discord } from '../utils/icon'
+import { HEADER_LIST } from '../utils/helper'
 
 const Header = () => {
   const [open, setOpen] = useState(false)
   const handleClick = () => {
     setOpen(!open)
-    document.body.style.overflow = open ? '' : 'hidden'
   }
+
+  useEffect(() => {
+    document.body.style.overflow = open ? 'hidden' : 'unset'
+  }, [open])
 
   const closeHandler = () => {
     setOpen(false)

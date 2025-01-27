@@ -40,7 +40,7 @@ useEffect(() => {
           <h1 className="text-7xl max-w-[1320px] mx-auto leading-[91.8px] max-lg:leading-[80px] max-md:leading-[60px] max-sm:leading-[40px] max-lg:text-6xl max-md:text-5xl max-sm:text-4xl font-poppins text-center text-white">There are games... And then
             there are <span className="text-[#1BABFE]">Gilded</span> Games</h1>
             <p className="text-white text-center text-4xl max-lg:text-3xl max-md:text-2xl max-sm:text-xl mt-5">
-                {`${timeLeft.days}d : ${timeLeft.hours}hr : ${timeLeft.minutes}min : ${timeLeft.seconds}sec`}
+               <span className="text-[#1BABFE]">{`${timeLeft.days}d`}</span> {` : ${timeLeft.hours}hr : ${timeLeft.minutes}min : ${timeLeft.seconds}sec`}
             </p>
             <p className="text-center leading-[22.95px] text-lg max-md:text-base max-md:leading-[18px] text-white">Remaining Presale Time</p>
             <div className="flex justify-center gap-6 mt-[22px]">
